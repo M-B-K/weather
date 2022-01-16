@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans";
+}
+.header {
+  border-bottom: 2px solid #bbbbbb;
+}
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  width: 804px;
+}
+:root {
+  --brand: #3266b4;
+  --primari: #444444;
+  --secondary: #666666;
+}
+/* start header */
+h1 {
+  margin-top: 96px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 131px;
+  color: var(--brand);
+}
+
+.flexe {
+  display: flex;
+  justify-content: space-between;
+}
+.content .imp {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--brand);
+  display: inline;
+  margin-bottom: 32px;
+}
+
+i {
+  margin-left: 120px;
+  margin-right: 17px;
+  color: var(--secondary);
+  margin-bottom: 32px;
+  line-height: 33px;
+}
+
+.location {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  text-align: right;
+  color: var(--secondary);
+  margin-bottom: 32px;
+  display: inline;
+}
+/* end header */
+/* start part1 */
+h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--primari);
+  line-height: 33px;
+  margin-top: 44px;
+  margin-bottom: 24px;
+}
+
+.right {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+  align-content: flex-end;
+}
+.right .coul1 .row1,
+.right .coul2 .row1,
+.right .coul3 .row1 {
+  margin-bottom: 32px;
+}
+
+div {
+  margin-bottom: 10px;
+}
+
+.right div {
+  flex: 1;
+}
+
+.right .row2 div {
+  margin-bottom: 0;
+}
+
+.sam {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--secondary);
+  margin: 10px 0px;
+}
+.nam {
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--secondary);
+  margin: 10px auto;
+}
+
+/* end part1 */
+/* start part2 */
+.forecast {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forecast div {
+  flex: 1;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--secondary);
+}
+
+.right .row2 {
+  margin-bottom: 0;
+}
+.lastt {
+  margin-top: 64px;
+}
+.last {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--secondary);
+}
+/* end part 2 */
+/* end design */
