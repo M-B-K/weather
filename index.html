@@ -15,55 +15,51 @@
     />
     <!--file for css  -->
     <link rel="stylesheet" href="./css/style.css" />
-    <title>tempr</title>
+    <title>WeatherApp</title>
   </head>
   <body>
     <div class="content">
       <div class="header">
         <h1>20 &#x2103;</h1>
-        <div class="flexe">
-          <div class="imp">Very low chance rain. slightly windy night</div>
-          <div>
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
-            <p class="location">Aleppo, Syria</p>
+        <div class="flex">
+          <div class="title">Very low chance rain. slightly windy night</div>
+          <div class="location">
+            <!-- <i class="fa fa-map-marker" aria-hidden="false"></i> -->
+            <p>Aleppo, Syria</p>
           </div>
         </div>
       </div>
+
       <div class="part1">
         <h2>RIGHT NOW</h2>
-        <div class="right">
-          <div class="coul1">
-            <div class="row1">
-              <div class="row1-1 sam">Real feel</div>
-              <div class="row1-2 nam">18.3 °C</div>
-            </div>
-            <div class="row2">
-              <p class="row2-1 sam">Chance of rain</p>
-              <div class="row2-2 nam">0%</div>
-            </div>
+        <div class="row">
+          <div class="col">
+            <div class="row1-1 sam">Real feel</div>
+            <div class="row1-2 nam">18.3 °C</div>
           </div>
-          <div class="coul2">
-            <div class="row1">
-              <div class="row1-1 sam">Humidity</div>
-              <div class="row1-2 nam">50%</div>
-            </div>
-            <div class="row2">
-              <p class="row2-1 sam">UV index</p>
-              <div class="row2-2 nam">0</div>
-            </div>
+          <div class="col">
+            <p class="row2-1 sam">Chance of rain</p>
+            <div class="row2-2 nam">0%</div>
           </div>
-          <div class="coul3">
-            <div class="row1">
-              <div class="row1-1 sam">Pressure</div>
-              <div class="row1-2 nam">1014 mbar</div>
-            </div>
-            <div class="row2">
-              <p class="row2-1 sam">Wind speed</p>
-              <div class="row2-2 nam">24.3 km/h</div>
-            </div>
+          <div class="col">
+            <div class="row1-1 sam">Humidity</div>
+            <div class="row1-2 nam">50%</div>
+          </div>
+          <div class="col">
+            <p class="row2-1 sam">UV index</p>
+            <div class="row2-2 nam">0</div>
+          </div>
+          <div class="col">
+            <div class="row1-1 sam">Pressure</div>
+            <div class="row1-2 nam">1014 mbar</div>
+          </div>
+          <div class="col">
+            <p class="row2-1 sam">Wind speed</p>
+            <div class="row2-2 nam">24.3 km/h</div>
           </div>
         </div>
       </div>
+
       <div class="part2">
         <h2>FORECAST</h2>
         <div class="forecast">
@@ -84,7 +80,7 @@
           </div>
         </div>
       </div>
-      <div class="lastt">
+      <div class="lasts">
         <p class="last">Last updated: 2 hours ago</p>
         <p class="last">Source: OpenWeather</p>
       </div>

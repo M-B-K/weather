@@ -4,21 +4,25 @@
   box-sizing: border-box;
   font-family: "Noto Sans";
 }
-.header {
-  border-bottom: 2px solid #bbbbbb;
-}
 
-.content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 804px;
-}
 :root {
   --brand: #3266b4;
   --primari: #444444;
   --secondary: #666666;
 }
+
+.content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 820px;
+  padding: 20px;
+}
+
 /* start header */
+.header {
+  border-bottom: 2px solid #bbbbbb;
+}
+
 h1 {
   margin-top: 96px;
   margin-bottom: 16px;
@@ -28,17 +32,19 @@ h1 {
   color: var(--brand);
 }
 
-.flexe {
+.flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
 }
-.content .imp {
+
+.content .title {
   font-weight: 700;
   font-size: 24px;
   line-height: 33px;
   color: var(--brand);
   display: inline;
-  margin-bottom: 32px;
 }
 
 i {
@@ -53,13 +59,42 @@ i {
   font-weight: 400;
   font-size: 24px;
   line-height: 33px;
-  text-align: right;
   color: var(--secondary);
-  margin-bottom: 32px;
   display: inline;
+}
+
+@media (max-width: 525px) {
+  h1 {
+    margin-top: 60px;
+  }
+  .flex {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10px;
+  }
+  .content .title {
+    font-size: 20px;
+    max-width: 320px;
+  }
+  .location {
+    font-size: 20px;
+  }
 }
 /* end header */
 /* start part1 */
+.part1 {
+  margin-bottom: 44px;
+}
+.part1 .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0 94px;
+}
+
+.part1 .row .col {
+  margin-bottom: 32px;
+}
+
 h2 {
   font-weight: 700;
   font-size: 24px;
@@ -67,30 +102,6 @@ h2 {
   line-height: 33px;
   margin-top: 44px;
   margin-bottom: 24px;
-}
-
-.right {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 44px;
-  align-content: flex-end;
-}
-.right .coul1 .row1,
-.right .coul2 .row1,
-.right .coul3 .row1 {
-  margin-bottom: 32px;
-}
-
-div {
-  margin-bottom: 10px;
-}
-
-.right div {
-  flex: 1;
-}
-
-.right .row2 div {
-  margin-bottom: 0;
 }
 
 .sam {
@@ -107,11 +118,18 @@ div {
   margin: 10px auto;
 }
 
+@media (max-width: 525px) {
+  .part1 .row {
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+    gap: 0;
+  }
+}
 /* end part1 */
 /* start part2 */
 .forecast {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 64px;
 }
 
 .forecast div {
@@ -124,6 +142,11 @@ div {
 .right .row2 {
   margin-bottom: 0;
 }
+@media (max-width: 525px) {
+  .forecast div {
+    font-size: 20px;
+  }
+}
 .lastt {
   margin-top: 64px;
 }
@@ -133,5 +156,6 @@ div {
   line-height: 19px;
   color: var(--secondary);
 }
+
 /* end part 2 */
 /* end design */
