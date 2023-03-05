@@ -68,5 +68,4 @@ https: fetch(url)
 let loader = document.getElementById("preLoader");
 window.addEventListener("load", function () {
   loader.style.visibility = "hidden";
-  loader.style.opacity = "0";
 });
