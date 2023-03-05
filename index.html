@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- file for icons -->
-    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- <link rel="stylesheet" href="css/all.min.css" /> -->
     <!-- add Noto sans font -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -17,12 +17,18 @@
     <link rel="stylesheet" href="./css/style.css" />
     <title>WeatherApp</title>
   </head>
+
   <body>
+    <!---------------------------------------        Page Loader       --------------------------------------->
+
+    <div id="preLoader">
+      <img src="./img/Dual Ring-2s-200px.svg" alt="" />
+    </div>
     <div class="content">
       <div class="header">
-        <h1>20 &#x2103;</h1>
+        <h1></h1>
         <div class="flex">
-          <div class="title">Very low chance rain. slightly windy night</div>
+          <div class="title"></div>
           <div class="location">
             <img src="./img/add.svg" alt="" />
             <p>Aleppo, Syria</p>
@@ -36,32 +42,32 @@
           <div class="row">
             <div class="col">
               <div class="row1">
-                <div class="row1-1 min_title">Real feel</div>
-                <div class="row1-2 val">18.3 °C</div>
+                <div class="title">Real feel</div>
+                <div class="RealFeel"></div>
               </div>
               <div class="row2">
-                <div class="row2-1 min_title">UV index</div>
-                <div class="row2-2 val">0</div>
+                <div class="title">Sea Level</div>
+                <div class="sea_level"></div>
               </div>
             </div>
             <div class="col">
               <div class="row1">
-                <div class="row2-1 min_title">Chance of rain</div>
-                <div class="row2-2 val">0%</div>
+                <div class="title">rain</div>
+                <div class="Rain"></div>
               </div>
               <div class="row2">
-                <div class="row1-1 min_title">Pressure</div>
-                <div class="row1-2 val">1014 mbar</div>
+                <div class="title">Pressure</div>
+                <div class="Pressure"></div>
               </div>
             </div>
             <div class="col">
               <div class="row1">
-                <div class="row1-1 min_title">Humidity</div>
-                <div class="row1-2 val">50%</div>
+                <div class="title">Humidity</div>
+                <div class="Humidity"></div>
               </div>
               <div class="row2">
-                <div class="row2-1 min_title">Wind speed</div>
-                <div class="row2-2 val">24.3 km/h</div>
+                <div class="title">Wind speed</div>
+                <div class="WindSpeed"></div>
               </div>
             </div>
           </div>
@@ -72,32 +78,37 @@
         <h2>FORECAST</h2>
         <div class="forecast">
           <div class="coul1">
-            <div class="day">Friday</div>
-            <div class="day">Saturday</div>
-            <div class="day">Sunday</div>
+            <div class="day day1"></div>
+            <div class="day day2"></div>
+            <div class="day day3"></div>
           </div>
           <div class="coul2">
-            <div class="stat">
-              <span>Sunny</span> <img src="./img/sun.svg" alt="" />
+            <div class="stat stat1">
+              <span class="disc1"></span>
+              <img src="" alt="" />
             </div>
-            <div class="stat">
-              <span>Sunny</span> <img src="./img/sun.svg" alt="" />
+            <div class="stat stat2">
+              <span class="disc2"></span>
+              <img src="" alt="" />
             </div>
-            <div class="stat">
-              <span>Sunny</span> <img src="./img/sun.svg" alt="" />
+            <div class="stat stat3">
+              <span class="disc3"></span>
+              <img src="" alt="" />
             </div>
           </div>
           <div class="coul3">
-            <div class="temp">24°C / 16°C</div>
-            <div class="temp">24°C / 16°C</div>
-            <div class="temp">24°C / 16°C</div>
+            <div class="temp1"></div>
+            <div class="temp2"></div>
+            <div class="temp3"></div>
           </div>
         </div>
       </div>
-      <div class="lasts">
+      <!-- <div class="lasts">
         <p class="last">Last updated: 2 hours ago</p>
         <p class="last">Source: OpenWeather</p>
-      </div>
+      </div> -->
     </div>
+
+    <script src="./js/main.js"></script>
   </body>
 </html>
